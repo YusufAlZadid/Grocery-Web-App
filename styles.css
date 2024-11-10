@@ -1,0 +1,92 @@
+﻿/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #007bff !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #007bff !important;
+}
+
+.hero {
+    position: relative;
+    color: #fff;
+}
+
+    .hero h1 {
+        font-weight: 700;
+    }
+
+
+    .hero .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+        z-index: 1;
+    }
+
+    .hero .container {
+        position: relative;
+        z-index: 2;
+    }
+.popular-categories h2 {
+    color: #007bff;
+    font-weight: 600;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #007bff;
+}
+
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero .btn-success {
+        font-size: 1rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+}
+/* Badge Styling */
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    line-height: 1;
+}

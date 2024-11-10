@@ -1,0 +1,30 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      php: 8.3  # Set the PHP version here, adjust it to the version you're using
+    commands:
+      - echo "Installing Composer"
+      - curl -sS https://getcomposer.org/installer | php
+      - php composer.phar install  # Installs project dependencies via Composer
+
+  pre_build:
+    commands:
+      - echo "Preparing for PHPUnit tests"
+      - php -v  # Check PHP version
+      - vendor/bin/phpunit --version  # Check PHPUnit version to verify installation
+
+  build:
+    commands:
+      - echo "Running PHPUnit tests"
+      - vendor/bin/phpunit --testdox --configuration phpunit.xml tests  # Runs the PHPUnit tests from the 'tests' directory
+
+  post_build:
+    commands:
+      - echo "Build and test process complete."
+
+artifacts:
+  files:
+    - '**/*'
+
