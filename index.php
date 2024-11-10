@@ -168,7 +168,7 @@ session_start();
 	<!-- Footer Section -->
 	<footer class="bg-dark text-white py-4">
 		<div class="container text-center">
-			<p class="mb-0">&copy; 2024 Team 4. All rights reserved to this group only.</p>
+			<p class="mb-0">&copy; 2024 Al Zadid Yusuf. All rights reserved.</p>
 		</div>
 	</footer>
 
